@@ -5,7 +5,7 @@ Use the `files` key to download a file from a bucket in Amazon S3 to the instanc
 Use the `Resources` key to create a new file system in Amazon Elastic File System (Amazon EFS). All of the instances in your environment can connect to the same EFS file system for shared, scalable storage. Use `storage-efs-mountfilesystem.config` to mount the file system on each instance. Note that any resources that you create with configuration files are tied to the lifecycle of your environment and will be lost if you terminate your environment or remove the configuration file.
 
 ### storage-efs-mountfilesystem.config
-Mount an Amazon EFS file system to a local path on the instances in your environment. You can create the volume as part of the environment with `storage-efs-createfilesystem.config`, or external to your environment by using the Amazon EFS Management Console, AWS CLI, or an SDK.
+Mount an Amazon EFS file system to a local path on the instances in your environment. You can create the file system as part of the environment with `storage-efs-createfilesystem.config`, or external to your environment by using the Amazon EFS Management Console, AWS CLI, or an SDK.
 
 ### proxy-configure-nodejs.configs
 Use the option_settings key to modify Node.js Platform Options ProxyServer to select which web server should be used to proxy connections to Node.js.
